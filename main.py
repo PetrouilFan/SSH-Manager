@@ -8,8 +8,12 @@ try:
     # Change to temp pyinstaller's directory (if it's running through pyinstaller).
     os.chdir(sys._MEIPASS)
 except:
-    # Else change the current working directory to the directory of the script.
-    os.chdir(os.path.dirname(sys.argv[0]))
+    # Else try to change the current working directory to the directory of the script.
+    try:
+        os.chdir(os.path.dirname(sys.argv[0]))
+    except:
+        # Already in the script directory
+        pass
 
 
 # Getting the arguments passed to the script.
