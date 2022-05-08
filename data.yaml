@@ -1,0 +1,8 @@
+Server1:
+  user: user1
+  domain: example1.com
+  port: 22
+Server2:
+  user: root
+  domain: 123.123.123.123
+  port: 2222
