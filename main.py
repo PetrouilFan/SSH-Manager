@@ -44,8 +44,15 @@ def start_ssh(name,connection):
     print(f"Connecting {fg.green}{name}{fg.rs} at {fg.green}{domain}{fg.rs}:\n")
     os.system(f"ssh {user}@{domain} -p {port}")
 
-with open('data.yaml') as f:
-    sshs = yaml.load(f, Loader=yaml.FullLoader)
+# Checking if the file data.yaml exists, and if it does, it loads the data from the file into the sshs variable.
+# Otherwise, it prints an error message and exits the script.
+if os.path.isfile('data.yaml'):
+    with open('data.yaml') as f:
+        sshs = yaml.load(f, Loader=yaml.FullLoader)
+else:
+    print(f"{fg.red}No data.yaml file detected\nPlease make sure that both the script and the data.yaml are in the same directory{fg.rs}")
+    input("Press enter to exit...")
+    sys.exit()
 
 
 # Checking if the script was called with an argument, and if it was, then it checks if the argument is
