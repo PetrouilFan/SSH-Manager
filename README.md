@@ -24,7 +24,7 @@ Server2:
 ## Build
 You can also build the code as an executable to run it on PCs without python installed
 
-You can either include the yaml file the executable as a result you wont be able to add or remove connections and you'll need to rebuild the executable to change them, ot you can select not to include the data.yaml so, as a result you'll need to have the data.yaml file in the same directory as the executable whenever you want to run it
+You can either include the yaml file with the executable, as a result you only need the executable to run the program but you wont be able to add or remove connections and you'll need to rebuild the executable to change them, or you can select not to include the data.yaml so, as a result you'll need to have the data.yaml file in the same directory as the executable whenever you want to run it
 
 ### Windows
 To build it for windows, double click on the `build_windows.cmd` in the build directory. The output will be in the build directory as `main.exe` 
