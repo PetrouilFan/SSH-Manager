@@ -2,7 +2,7 @@
 A beautiful manager to have all your ssh connections in the same place.
 
 ## How to use
-First, you have to download the requirment packages. You can do it by running the following command:
+First, you have to download the required packages. You can do it by running the following command:
 
 `pip3 install PyYAML sty pick`
 
