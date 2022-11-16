@@ -2,11 +2,7 @@
 A beautiful manager to have all your ssh connections in the same place.
 
 ## How to use
-First, you have to download the required packages. You can do it by running the following command:
-
-`pip3 install PyYAML sty pick`
-
-Then, you will need to save your ssh connection details in the data.yaml file.
+You will need to save your ssh connection details in the data.yaml file.
 The structure is like this:
 
 ```
