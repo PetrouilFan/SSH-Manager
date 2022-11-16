@@ -26,3 +26,19 @@ You can either include the yaml file with the executable, as a result you only n
 To build it for windows, double click on the `build_windows.cmd` in the build directory. The output will be in the build directory as `main.exe` 
 ### Linux
 Not yet implemented
+
+
+## Install (Temporary)
+
+Implimented only in linux yet.
+### Install
+```
+sudo ./install/install.sh
+```
+### Configuration
+The default configuration file for your user is located under the User's home directory/.config/ssh-manager
+(eg. /home/user1/.config/ssh-manager/data.yaml)
+### Uninstall
+```
+sudo /opt/ssh-manager/uninstall.sh
+```
