@@ -1,6 +1,10 @@
 # SSH Manager
 A beautiful manager to have all your ssh connections in the same place.
 
+## Install required python packages
+```
+pip install -r requirments.txt
+```
 ## How to use
 You will need to save your ssh connection details in the data.yaml file.
 The structure is like this:
