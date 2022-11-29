@@ -21,28 +21,21 @@ Server2:
 
 # You can type as many servers as you want
 ```
-## Build
+## Build Windows
 You can also build the code as an executable to run it on PCs without python installed
 
 You can either include the yaml file with the executable, as a result you only need the executable to run the program but you wont be able to add or remove connections and you'll need to rebuild the executable to change them, or you can select not to include the data.yaml so, as a result you'll need to have the data.yaml file in the same directory as the executable whenever you want to run it
+To build it for windows, double click on the `build.cmd` in the windows directory. The output will be in the windows directory as `main.exe` 
 
-### Windows
-To build it for windows, double click on the `build_windows.cmd` in the build directory. The output will be in the build directory as `main.exe` 
-### Linux
-Not yet implemented
-
-
-## Install (Temporary)
-
-Implimented only in linux yet.
-### Install
+### Install Linux
+Install is implemented only in linux yet
+The default install path is ```/opt/ssh-manager```
+and the default config path is on user's home_directory/.config/ssh-manager/ (Cant be changed yet)
+To install it run:
 ```
-sudo ./install/install.sh
+sudo ./linux/install.sh
 ```
-### Configuration
-The default configuration file for your user is located under the User's home directory/.config/ssh-manager
-(eg. /home/user1/.config/ssh-manager/data.yaml)
-### Uninstall
+#### Uninstall
 ```
 sudo /opt/ssh-manager/uninstall.sh
 ```
