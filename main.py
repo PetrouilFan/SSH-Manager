@@ -8,12 +8,18 @@ try:
     # Change to temp pyinstaller's directory (if it's running through pyinstaller).
     os.chdir(sys._MEIPASS)
 except:
-    # Else try to change the current working directory to the directory of the script.
-    try:
-        os.chdir(os.path.dirname(sys.argv[0]))
-    except:
-        # Already in the script directory
-        pass
+    # Else try to change the current working directory to the directory of the script. (Windows)
+    if os.name == 'nt':
+        try:
+            os.chdir(os.path.dirname(sys.argv[0]))
+        except:
+            # Already in the script directory
+            pass
+    else:
+        # If on linux open config file from the home directory
+        os.chdir(os.path.expanduser("~"))
+        os.chdir(".config/ssh-manager")
+
 
 
 # Getting the arguments passed to the script.

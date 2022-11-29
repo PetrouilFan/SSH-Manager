@@ -10,8 +10,8 @@ fi
 cd "${0%/*}"
 mkdir -p $installpath
 mkdir -p $configpath
-cp -r ../../main.py $installpath
-cp -r ../../data.yaml $configpath/ssh-manager.yaml
+cp -r ../main.py $installpath
+cp -r ../data.yaml $configpath/data.yaml
 
 # Create Runner
 echo '''
@@ -24,8 +24,8 @@ ln -s $installpath/runner.sh /bin/ssh-manager
 # Create uninstaller
 echo '''
 #!/bin/bash
-rm -rf /opt/ssh-manager
-unlink /bin/ssh-manager
+sudo rm -rf /opt/ssh-manager
+sudo unlink /bin/ssh-manager
 ''' > $installpath/uninstall.sh
 chmod +x $installpath/uninstall.sh
 

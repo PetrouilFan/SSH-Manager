@@ -1,8 +1,8 @@
-Server1:
-  user: user1
-  domain: example1.com
-  port: 22
-Server2:
-  user: root
-  domain: 123.123.123.123
+Ultron:
+  user: petrouil
+  domain: ultron.petrouil.eu
   port: 2222
+Alpha:
+  user: petrouil
+  domain: alpha.petrouil.eu
+  port: 22
