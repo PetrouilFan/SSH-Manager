@@ -1,8 +1,8 @@
-Ultron:
-  user: petrouil
-  domain: ultron.petrouil.eu
+Server1:                        # Server name (Identifier)
+  user: user1                   # User you want to connect with
+  domain: example1.com          # Domain name or ip of the server
+  port: 22                      # Port of the server
+Server2:
+  user: root
+  domain: 123.123.123.123
   port: 2222
-Alpha:
-  user: petrouil
-  domain: alpha.petrouil.eu
-  port: 22
